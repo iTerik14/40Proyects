@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    position: relative;
+    width: 50%;
+    height: auto;
+    font-size: 50px;
+    /* background-color: aqua; */
+    text-align: center;
+    /* font-family: 'Times New Roman', Times, serif; */
+    margin-bottom: 30px;
+}
+
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 5px;
+    bottom: 2px;
+    right: 40%;
+    background-color: rgb(46, 91, 240);
+}
+
+.card_container {
+    width: 45%;
+    height: 450px;
+    background-color: rgb(253, 253, 253);
+    border: 1px solid rgb(216, 214, 214);
+    border-radius: 20px;
+    transition: transform .4s, box-shadow .3s;
+    display: grid;
+    gap: 2px;
+    grid-template:
+        "perfil" 40%
+        "name" 30px
+        "cargo" 20px
+        "description" 120px
+        "selector" 35px
+        "boton" 40px
+    ;
+    transition: box-shadow .5s;
+}
+
+.card_container:hover {
+    /* transform: scale(1.001); */
+    box-shadow: 0 0 25px 0 rgb(146, 144, 144);
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.perfil {
+    position: relative;
+    grid-area: perfil;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0 0 10px 1px black;
+}
+
+
+.perfil::after {
+    content: "❔";
+    position: absolute;
+    top: 5px;
+    right: 120px;
+    font-size: 25px;
+    padding-top: 3px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(58, 155, 245);
+    box-shadow: 0 0 10px 1px black;
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    grid-area: name;
+    /* background-color: blue; */
+    text-align: center;
+    font-size: 1.4rem;
+
+}
+
+.cargo {
+    grid-area: cargo;
+    text-align: center;
+}
+
+
+.description {
+    grid-area: description;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selector {
+    grid-area: selector;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.selector>* {
+    height: 30px;
+    width: 30px;
+    color: rgb(141, 141, 248);
+    font-size: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+
+.selector>*:hover {
+    color: rgb(62, 62, 226);
+}
+
+.boton {
+    grid-area: boton;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0 solid black;
+    box-shadow:
+        2px 0px 0 0 rgb(26, 96, 201),
+        -2px 0px 0 0 rgb(170, 202, 250),
+        0px 2px 0 0 rgb(26, 96, 201),
+        0px -2px 0 0 rgb(176, 207, 255);
+    transition: background-color .5s, color .5s;
+}
+
+.boton:hover {
+    background-color: rgb(31, 98, 245);
+    color: white;
+}
