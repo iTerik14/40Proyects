@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./coursel.jpg);
+    background-size: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-center {
+    width: 40%;
+    height: 35%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    opacity: .9;
+}
+
+.modal-center .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 15px;
+    margin-bottom: 35px;
+    color: rgb(49, 49, 49);
+}
+
+.modal-center .btn {
+    min-width: 110px;
+    height: 35px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: .8rem;
+    background-color: rgb(45, 118, 255);
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.btn:hover {
+    border: 2px solid rgb(45, 118, 255);
+    background-color: white;
+    color: rgb(45, 118, 255);
+}
+
+.modal::backdrop {
+    background-color: rgb(126, 124, 124);
+    opacity: .5;
+}
+
+.modal {
+    width: 400px;
+    height: 20%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(170, 5, 5);
+    text-transform: capitalize;
+    text-shadow:
+        2px 0 2px rgb(97, 0, 0),
+        -2px 0 2px rgb(97, 0, 0),
+        0 2px 2px rgb(97, 0, 0),
+        0 -2px 2px rgb(97, 0, 0);
+    font-size: 2rem;
+
+    transition: transform .5s;
+}
+
+.close-modal:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 880px) {
+    .modal-center {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .modal-center {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .modal-center {
+        width: 70%;
+    }
+
+    .modal-center .title {
+        font-size: 2rem;
+
+    }
+
+    .modal {
+        width: 300px;
+    }
+}
