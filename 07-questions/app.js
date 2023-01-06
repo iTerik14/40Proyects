@@ -1,18 +1,18 @@
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".cards");
 
 cards.forEach((card) => {
-  const btn = card.querySelector(".card-simbol");
-  const bthAdd = btn.querySelector(".button-add");
-  const bthMen = btn.querySelector(".button-menus");
-  const footer = card.querySelector(".footer-card");
+  let btn = card.querySelector(".pregunta_btn");
 
   btn.addEventListener("click", () => {
-    cards.forEach((item) => {
-      if (item !== card) {
-        item.classList.remove("show-text");
-      }
-    });
-
-    footer.classList.toggle("show-text");
+    quitarRespuestas();
+    let respuesta = card.querySelector(".respuesta");
+    respuesta.classList.toggle("show-answer");
   });
 });
+
+function quitarRespuestas() {
+  cards.forEach((card) => {
+    let respuesta = card.querySelector(".respuesta");
+    respuesta.classList.remove("show-answer");
+  });
+}
