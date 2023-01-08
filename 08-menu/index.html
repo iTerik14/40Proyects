@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1>Our Menu</h1>
+        </div>
+        <nav class="nav">
+            <div class="nav-categorias nav_activo all-categorys" data-categoria="all">
+                Todo
+            </div>
+            
+            <div class="nav-categorias" data-categoria="hamburguesas">
+                Hamburguesas
+            </div>
+            <div class="nav-categorias" data-categoria="helados">
+                Postres
+            </div>
+            <div class="nav-categorias" data-categoria="bebidas">
+                Bebidas
+            </div>
+            <div class="nav-categorias" data-categoria="segundos">
+                Segundos
+            </div>
+        </nav>
+        <div class="container_categorias">
+
+            <!-- postres -->
+            <template id="template-categoria">
+                <div class="categoria"">
+                    <div class="box_img">
+                        <img src="img/bebida/coctel.jpg" alt="img">
+                    </div>
+                    <div class="box_content">
+                        <div class="box_content-title">
+                            <h2 class="content_name">
+                                Helado con chocolate
+                            </h2>
+                            <div class="content_price">
+                                $150
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="box_content-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit in eaque officia quisquam, eos
+                            adipisci tenetur fugit velit blanditiis quibusdam possimus consequuntur.
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+{
+    "helados": [
+        {
+            "img": "img/postre/postre01.jpg",
+            "name": "postre 1",
+            "price": "70$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        },
+        {
+            "img": "img/postre/postre02.jpg",
+            "name": "postre 2",
+            "price": "50$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        },
+        {
+            "img": "img/postre/postre03.jpg",
+            "name": "postre 3",
+            "price": "64$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        },
+        {
+            "img": "img/postre/postre04.jpg",
+            "name": "postre 4",
+            "price": "40$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        }
+    ],
+    "hamburguesas": [
+        {
+            "img": "img/hamburgesa/hamburger01.jpg",
+            "name": "hamburguesa simple",
+            "price": "250$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        },
+        {
+            "img": "img/hamburgesa/hamburger02.jpg",
+            "name": "hamburguesa doble",
+            "price": "300$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        }
+    ],
+    "bebidas": [
+        {
+            "img": "img/bebida/coctel.jpg",
+            "name": "coctel",
+            "price": "150$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        },
+        {
+            "img": "img/bebida/vino.jpg",
+            "name": "vino",
+            "price": "200$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        },
+        {
+            "img": "img/bebida/cafe.jpg",
+            "name": "cafe",
+            "price": "90$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        },
+        {
+            "img": "img/bebida/agua.jpg",
+            "name": "agua",
+            "price": "10$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        }
+    ],
+    "segundos": [
+        {
+            "img": "img/segundo/esparragos.jpg",
+            "name": "esparragos",
+            "price": "300$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        },
+        {
+            "img": "img/segundo/parrilla.jpg",
+            "name": "parrilla",
+            "price": "350$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        },
+        {
+            "img": "img/segundo/pollo.jpg",
+            "name": "pollo frito",
+            "price": "200$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        },
+        {
+            "img": "img/segundo/salmon.jpg",
+            "name": "salmon",
+            "price": "300$",
+            "descriptions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, in veniam harum libero, obcaecati accusantium quo alias maxime ipsum."
+        }
+    ]
+}
