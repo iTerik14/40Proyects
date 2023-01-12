@@ -30,6 +30,10 @@ body{
     font-size: 3rem;
 }
 
+.title p{
+    text-align: center;
+}
+
 .content{
     width: 80%;
     display: flex;
