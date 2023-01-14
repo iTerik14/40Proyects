@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    grid-template:
+        "header" 200px
+        "main" auto
+    ;
+}
+
+.header {
+    width: 90%;
+    grid-area: header;
+
+}
+
+.header h1 {
+    font-size: 1.7em;
+    letter-spacing: 4px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.generate {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.generate label {
+    font-size: 1.4em;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.generate input {
+    width: 4em;
+    height: 2.5em;
+    border: 1px solid rgb(116, 115, 115);
+    border-radius: 5px;
+}
+
+.generate button {
+    height: 2.5em;
+    width: 8em;
+    padding: 0.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 147, 192);
+    color: white;
+    transition: background-color .8s;
+}
+
+.generate button:hover {
+    background-color: rgb(2, 179, 233);
+    cursor: pointer;
+}
+
+.main {
+    width: 50%;
+    grid-area: main;
+}
+
+.main .lorem {
+    display: none;
+    color: rgb(233, 232, 232);
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid teal;
+    border-radius: 1em;
+}
+
+.lorem.show_lorem {
+    display: block;
+}
+
+
+@media screen and (max-width: 900px) {
+    .main {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 80%;
+    }
+
+    .header {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        font-size: 15px;
+    }
+
+    .main {
+        width: 91%;
+    }
+
+    .header {
+        width: 90%;
+    }
+
+}
