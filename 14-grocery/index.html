@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Grocery</title>
+</head>
+
+<body>
+
+    <section class="main">
+        <div class="message_container">
+            <!-- <span class="message mAdd">item agregado</span> -->
+            <!-- <span class="message mDel">item eliminado</span> -->
+            <!-- <span class="message mDel">debe agregar algo</span> -->
+            <!-- <span class="message mDel">borrando todo...</span> -->
+        </div>
+        <form action="" class="form">
+            <h2>Grocery Bud</h2>
+            <div class="container_input">
+                <input type="text" name="task" id="grocery" class="grocery" placeholder="Escribe....">
+                <input type="submit" value="enviar" class="submitBtn">
+            </div>
+        </form>
+        <div class="grocery_container">
+            
+        </div>
+
+        <div class="clear">
+            <!-- <span class="clearItems">Clear Items</span> -->
+        </div>
+    </section>
+
+    <template id="template_grocery">
+        <div class="task_item" data-id="1">
+            <span class="task_text"></span>
+            <div class="task_oper">
+                <span class="material-symbols-outlined">
+                    edit
+                </span>
+                <span class="material-symbols-outlined">
+                    delete
+                </span>
+            </div>
+        </div>
+    </template>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
