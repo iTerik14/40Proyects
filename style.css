@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -9,13 +13,15 @@ body{
 }
 
 .js{
-    width: 10%;
+    width: 100px;
+    height: 100px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .js img{
     width: 100%;
+    object-fit: cover;
 }
 
 .container p{
@@ -30,24 +36,39 @@ body{
 
 .proyects{
     width: 50%;
-    
     padding-top: 80px;
     flex: 1;
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
     align-items: center;
 }
 
 .proyects a{
-    width: 200px;
-    margin-bottom: 15px;
+    width: 300px;
     text-decoration: none;
     font-size: 1.3rem;
     color: rgb(255, 255, 255);
     border-radius: 15px;
     background-color: #333;
-    padding: 5px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 430px) {
+    .container p{
+        font-size: 4.0rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .proyects{
+        width: 80%;
+    }
+    .proyects a{
+        width: 300px;
+    }
 }
 
