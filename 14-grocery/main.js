@@ -60,9 +60,44 @@ btnClear.addEventListener('click', (e) => {
         container.innerHTML = "";
         message.innerHTML = `<span class="message mDel">borrando todo...</span>`
         quitarMessage(message);
-        setTimeout(()=>clearMessage(),300);
+        setTimeout(() => clearMessage(), 300);
     }
 });
+
+
+
+container.addEventListener('click', (e) => {
+    let act = e.target;
+    if (act.textContent.trim() === "delete") {
+        act.parentElement.parentElement.remove();
+        message.innerHTML = `<span class="message mDel">item eliminado</span>`;
+        quitarMessage(message);
+    }
+    if (act.textContent.trim() === "edit") {
+        console.log(act.parentElement.parentElement);
+        editarTask(act.parentElement.parentElement)
+    }
+})
+
+
+function editarTask(task) {
+    let tEdit = task.querySelector('.task_text').textContent;
+    let btnEdit = document.querySelector('.submitBtn');
+    btnEdit.value = "editar";
+    textTask.value = tEdit;
+    btnEdit.addEventListener("click", () => {
+        if (btnEdit.value === "editar") {
+            console.log("editar");
+        }
+    })
+}
+
+
+
+
+
+
+
 
 
 
