@@ -1,22 +1,42 @@
 
-const imgs = document.querySelectorAll('.slider_container img');
+const imgs = document.querySelector('.slider');
+
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
+const naveg = document.querySelector('.naveg');
 let pos = 0;
-let i = 0;
 
-console.log(imgs[0]);
+let cont = imgs.childElementCount * 100 - 100;
 
-next.addEventListener('click', (e) => {
-    pos += 100;
-    console.log(pos);
-    // imgs[i].style.transform = "translate(-" + pos + ")";
-    if (i === 0) {
-        prev.classList.toggle('toggle');
-        i++;
+naveg.addEventListener('click', (e) => {
+
+    if (e.target.textContent === "Prev") {
+        if (pos === 0) {
+            imgs.style.transition = ``;
+            imgs.style.transform = `translateX(-${cont}%)`;
+            pos = cont;
+        } else {
+            pos -= 100;
+            imgs.style.transform = `translateX(-${pos}%)`;
+            imgs.style.transition = `transform 1s`;
+        }
+        console.log(pos);
     }
-    console.log(i);
+
+
+    if (e.target.textContent === "Next") {
+        pos += 100;
+        imgs.style.transform = `translateX(-${pos}%)`;
+        imgs.style.transition = `transform 1s`;
+        if (pos > cont) {
+            imgs.style.transform = `translateX(0)`;
+            imgs.style.transition = ``;
+            pos = 0;
+        }
+        console.log(pos);
+    }
 })
+
 
 
 
