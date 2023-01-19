@@ -190,7 +190,7 @@ a {
         top: -300px;
         background-color: white;
         color: #333;
-        transition: top 1s;
+        transition: top .5s;
         z-index: -1;
     }
 
@@ -203,5 +203,4 @@ a {
     .menu_movil_show {
         top: 70px;
     }
-
 }
