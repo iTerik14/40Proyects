@@ -1,0 +1,65 @@
+:root{
+    --bgc:white;
+    --txt-color: black;
+    --text-h1: rgb(255, 0, 179);
+    --btn-color: rgb(255, 0, 179);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    background-color: var(--bgc);
+    color: white;
+    transition: all .6s ease-in-out;
+    color: var(--txt-color);
+}
+
+.dark_mode{
+    --bgc:#333;
+    --txt-color: white;
+    --text-h1: rgb(235, 68, 185);
+    --btn-color: rgb(235, 68, 185);
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav button{
+    width: 70px;
+    padding: 5px;
+    border: none;
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    border: 1px solid rgb(95, 95, 95);
+    color: white;
+    box-shadow: -1px 1px 5px 1px rgb(128, 128, 128);
+    transition: transform .5s;
+}
+
+.nav button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+main h2{
+    color: var(--text-h1);
+}
