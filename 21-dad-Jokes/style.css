@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    width: 50%;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    gap: 20px;
+}
+
+.container .boton {
+    font-size: 1.1em;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    /* border: 1px solid #aaa; */
+    border-radius: 5px;
+    color: white;
+    background-color: tomato;
+    box-shadow: -1px 1px 5px 1px rgb(100, 100, 100);
+}
+
+.container .boton:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.container__frase {
+    
+    padding: 15px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.container__frase .frase {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.container__frase .verso {
+    font-size: 1.1em;
+    margin-right: 20px;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body{
+        font-size: 17px;
+    }
+    .container {
+        width: 85%;
+    }
+}

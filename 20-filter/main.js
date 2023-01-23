@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // console.log(datos);
 
 function searchCon(data) {
-    const form = document.querySelector('form search');
+    // const form = document.querySelector('search');
     const search = document.querySelector('.search');
     form.addEventListener('keyup', () => {
         const inputValue = search.value;
